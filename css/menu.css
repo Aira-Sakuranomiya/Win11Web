@@ -1,0 +1,141 @@
+:root {
+	--menu-icon-size: 16px;
+}
+
+.menu-container {
+	margin: auto;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	pointer-events: none;
+}
+.menu-main {
+	transition: .6s cubic-bezier(0.04, 1.01, 0.2, 1);
+	/*background-color: #bd5875;*/
+	border-radius: 8px;
+	width: 200px;
+	backdrop-filter: blur(24px);
+	background-color: rgb(255, 255, 255, 0.5);
+	box-shadow: 0 10px 0px 0px rgb(0, 0, 0, 0.0);
+	transform: translateY(-16em);
+	overflow: hidden;
+	border: 1px solid rgb(0, 0, 0, 0.1);
+	display: flex;
+	margin-left: 18px;
+}
+.dropdown-active .menu-main {
+	transform: translateY(0);
+	box-shadow: 0 10px 16px 0px rgb(0, 0, 0, 0.2);
+}
+ul {
+	margin: 0;
+	padding: 1px;
+	width: 100%;
+}
+li {
+	list-style: none;
+}
+.menu-item {
+	height: 28px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	margin: 4px;
+	padding: 0 10px;
+	border-radius: 6px;
+	transition: background .2s;
+}
+.menu-item:hover {
+	background-color: rgb(0, 0, 0, 0.05);
+}
+.menu-item span {
+	display: inline-flex;
+	align-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+.item-0 span::before {
+	content: '';
+	background-image: url(/Icons/windows.iconsize.smallicon.svg);
+	width: var(--menu-icon-size);
+	height: var(--menu-icon-size);
+	margin-right: 10px;
+	background-size: 100%;
+	display: inline-flex;
+	align-content: center;
+	align-items: center;
+}
+.item-0 span::after, .item-1 span::after {
+	content: '';
+	background-image: url(/Icons/chevron_right_black_24dp.svg);
+	width: var(--menu-icon-size);
+	height: var(--menu-icon-size);
+	background-size: 100%;
+	display: inline-flex;
+	align-content: center;
+	align-items: center;
+	position: fixed;
+	right: 14px;
+	opacity: 0.5;
+}
+.item-1 span::before {
+	content: '';
+	background-image: url(/Icons/SortBy.svg);
+	width: var(--menu-icon-size);
+	height: var(--menu-icon-size);
+	margin-right: 10px;
+	background-size: 100%;
+	display: inline-flex;
+	align-content: center;
+	align-items: center;
+}
+.item-2 span::before {
+	content: '';
+	background-image: url(/Icons/windows.refresh.svg);
+	width: var(--menu-icon-size);
+	height: var(--menu-icon-size);
+	margin-right: 10px;
+	background-size: 100%;
+	display: inline-flex;
+	align-content: center;
+	align-items: center;
+}
+.item-3 span::before {
+	content: '';
+	background-image: url(/Icons/Windows.MultiVerb.cmd.svg);
+	width: var(--menu-icon-size);
+	height: var(--menu-icon-size);
+	margin-right: 10px;
+	background-size: 100%;
+	display: inline-flex;
+	align-content: center;
+	align-items: center;
+}
+.item-4 span::before {
+	content: '';
+	background-image: url(/Icons/windows.openControlPanel.svg);
+	width: var(--menu-icon-size);
+	height: var(--menu-icon-size);
+	margin-right: 10px;
+	background-size: 100%;
+	display: inline-flex;
+	align-content: center;
+	align-items: center;
+}
+.item-personalize span::before {
+	content: '';
+	background-image: url(/Icons/Personalize.svg);
+	width: var(--menu-icon-size);
+	height: var(--menu-icon-size);
+	margin-right: 10px;
+	background-size: 100%;
+	display: inline-flex;
+	align-content: center;
+	align-items: center;
+}
+.divider {
+	border-bottom: 1px solid rgb(0, 0, 0, 0.06);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}

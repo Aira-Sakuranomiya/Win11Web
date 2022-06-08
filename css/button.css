@@ -1,0 +1,19 @@
+.button {
+	background: var(--accent-color);
+	border: 0;
+	padding: 8px 16px;
+	border-radius: 6px;
+	color: white;
+	border-bottom: var(--accent-color-pressed) 1px solid;
+	margin: 12px;
+	transition: background .1s;
+	font-size: 15px;
+}
+.button:hover {
+	background: var(--accent-color-hover);
+	border-bottom: var(--accent-color-pressed) 1px solid;
+}
+.button:active, .button:hover:active {
+	background: var(--accent-color-pressed);
+	border-bottom: var(--accent-color-pressed) 1px solid;
+}
