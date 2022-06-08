@@ -56,7 +56,7 @@ li {
 }
 .item-0 span::before {
 	content: '';
-	background-image: url(/Icons/windows.iconsize.smallicon.svg);
+	background-image: url(Icons/windows.iconsize.smallicon.svg);
 	width: var(--menu-icon-size);
 	height: var(--menu-icon-size);
 	margin-right: 10px;
@@ -67,7 +67,7 @@ li {
 }
 .item-0 span::after, .item-1 span::after {
 	content: '';
-	background-image: url(/Icons/chevron_right_black_24dp.svg);
+	background-image: url(Icons/chevron_right_black_24dp.svg);
 	width: var(--menu-icon-size);
 	height: var(--menu-icon-size);
 	background-size: 100%;
@@ -80,7 +80,7 @@ li {
 }
 .item-1 span::before {
 	content: '';
-	background-image: url(/Icons/SortBy.svg);
+	background-image: url(Icons/SortBy.svg);
 	width: var(--menu-icon-size);
 	height: var(--menu-icon-size);
 	margin-right: 10px;
@@ -91,7 +91,7 @@ li {
 }
 .item-2 span::before {
 	content: '';
-	background-image: url(/Icons/windows.refresh.svg);
+	background-image: url(Icons/windows.refresh.svg);
 	width: var(--menu-icon-size);
 	height: var(--menu-icon-size);
 	margin-right: 10px;
@@ -102,7 +102,7 @@ li {
 }
 .item-3 span::before {
 	content: '';
-	background-image: url(/Icons/Windows.MultiVerb.cmd.svg);
+	background-image: url(Icons/Windows.MultiVerb.cmd.svg);
 	width: var(--menu-icon-size);
 	height: var(--menu-icon-size);
 	margin-right: 10px;
@@ -113,7 +113,7 @@ li {
 }
 .item-4 span::before {
 	content: '';
-	background-image: url(/Icons/windows.openControlPanel.svg);
+	background-image: url(Icons/windows.openControlPanel.svg);
 	width: var(--menu-icon-size);
 	height: var(--menu-icon-size);
 	margin-right: 10px;
@@ -124,7 +124,7 @@ li {
 }
 .item-personalize span::before {
 	content: '';
-	background-image: url(/Icons/Personalize.svg);
+	background-image: url(Icons/Personalize.svg);
 	width: var(--menu-icon-size);
 	height: var(--menu-icon-size);
 	margin-right: 10px;

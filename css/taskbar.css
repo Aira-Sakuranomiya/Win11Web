@@ -30,7 +30,7 @@
 	transform: scale(0.8)
 }
 .start-button-icon {
-	background-image: url(/Taskbar/Windows_10X_Logo.svg);
+	background-image: url(Taskbar/Windows_10X_Logo.svg);
 	width: 24px;
 	height: 24px;
 	background-size: 100%;
