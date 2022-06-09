@@ -7,8 +7,6 @@
 // });
 
 $(".desktop").bind('contextmenu', function (e) {
-	var id = this.id;
-	$("#txt_id").val(id);
 
 	var top = e.pageY+5;
 	var left = e.pageX;
@@ -21,6 +19,11 @@ $(".desktop").bind('contextmenu', function (e) {
 		$(".menu-container").addClass("dropdown-active").dequeue();
 	});
 
+	// disable default context menu
+	return false;
+});
+
+$(".menu-container, .taskbar").bind('contextmenu', function (e) {
 	// disable default context menu
 	return false;
 });
