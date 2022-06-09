@@ -29,6 +29,7 @@
 	/*background-color: #bd5875;*/
 	border-radius: 8px;
 	width: 200px;
+	-webkit-backdrop-filter: blur(24px);
 	backdrop-filter: blur(24px);
 	background-color: rgb(255, 255, 255, 0.5);
 	box-shadow: 0 10px 0px 0px rgb(0, 0, 0, 0.0);

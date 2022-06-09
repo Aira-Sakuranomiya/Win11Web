@@ -6,6 +6,7 @@
 	left: 0;
 	height: 48px;
 	width: 100%;
+	-webkit-backdrop-filter: blur(24px);
 	backdrop-filter: blur(24px);
 	border-top: 1px solid rgb(0, 0, 0, 0.1);
 	justify-content: center;
