@@ -7,10 +7,12 @@
 
 .app {
 	height: 100%;
+	z-index: 0;
 }
 
 html, body {
 	height: 100%;
+	width: 100%;
 	font-family: "Segoe UI Variable Display Small", "Microsoft YaHei UI", sans-serif;
 	user-select: none;
 	overflow: hidden;
@@ -23,6 +25,5 @@ html, body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: -1;
 	background-position: center;
 }

@@ -1,22 +1,24 @@
-<!doctype html>
-<html lang="zh">
+<!DOCTYPE html>
+<html lang="zh-CN">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta name="renderer" content="webkit">
-		<meta name="force-rendering" content="webkit">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<link href="css/menu.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<link href="css/button.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<link href="css/taskbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+		<link href="css/desktop.css" type="text/css" rel="stylesheet" media="screen,projection">
 		<title>Windows CR</title>
 	</head>
 
 	<body>
 		<div class="app">
 			<div class="desktop-background"></div>
+			<div class="desktop">
+				<button class="button">按钮</button>
+			</div>
 			<div class="taskbar">
 				<div class="start-button">
 					<div class="start-button-icon"></div>
@@ -26,10 +28,9 @@
 						<span class="time">23:33:33</span>
 						<span class="date">2022/6/9</span>
 					</div>
+					<div class="tray-showdesktop"></div>
 				</div>
 			</div>
-			<button class="button trigger-button">打开菜单</button>
-			<button class="button close-button">关闭菜单</button>
 			<div class="menu-container">
 				<div class="menu-main">
 					<ul>
@@ -57,18 +58,5 @@
 			</div>
 		</div>
 		<script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
-		<script>
-			$( ".trigger-button" ).click(function() {
-				$( ".menu-container" ).addClass( "dropdown-active" );
-			});
-			$( ".close-button" ).click(function() {
-				$( ".menu-container" ).removeClass( "dropdown-active" );
-			});
-			$( ".desktop-background" ).click(function() {
-				$( ".menu-container" ).removeClass( "dropdown-active" );
-			});
-			$(".desktop-background").on("contextmenu", function() {
-				$( ".menu-container" ).addClass( "dropdown-active" );
-			});
-		</script>
+		<script src="js/main.js"></script>
 	</body>

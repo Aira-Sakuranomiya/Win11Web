@@ -8,7 +8,6 @@
 	width: 100%;
 	backdrop-filter: blur(24px);
 	border-top: 1px solid rgb(0, 0, 0, 0.1);
-	z-index: 10;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
@@ -16,15 +15,20 @@
 .start-button {
 	width: 40px;
 	height: 40px;
-	border-radius: 4px;
+	border-radius: 8px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	transition: .2s;
+	padding: 4px;
+	background-clip: content-box;
+	position: absolute;
+	left: 0;
 }
 .start-button:hover {
-	background: rgb(0, 0, 0, 0.05);
+	background-color: rgb(0, 0, 0, 0.05);
+	border-radius: 8px;
 }
 .start-button:active .start-button-icon {
 	transform: scale(0.8)
@@ -39,9 +43,10 @@
 
 .taskbar-tray {
 	display: flex;
+	align-items: center;
 	float: right;
 	position: fixed;
-	right: 15px;
+	right: 0;
 	font-size: 13px;
 	font-weight: 400;
 }
@@ -52,9 +57,21 @@
 	border-radius: 4px;
 	box-shadow: 0 1px 2px 0 rgb(0, 0, 0, 0.0);
 	transition: background .2s, box-shadow .2s;
-	padding: 4px 4px 4px 6px;
+	padding: 4px 4px 4px 10px;
 }
 .tray-datetime:hover {
-	background-color: rgb(255, 255, 255, 0.6);
+	background-color: rgb(255, 255, 255, 0.8);
 	box-shadow: 0 1px 2px 0 rgb(0, 0, 0, 0.1);
+}
+.tray-showdesktop {
+	width: 2px;
+	height: 20px;
+	border-radius: 3em;
+	background-color: transparent;
+	padding: 14px 6px;
+	background-clip: content-box;
+	transition: background-color .2s;
+}
+.tray-showdesktop:hover {
+	background-color: rgb(0, 0, 0, 0.3);
 }
